@@ -1,0 +1,62 @@
+video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
+.hero-section {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+  transform:translate(0,250px);
+  text-align: center;
+}
+
+.hero-section > h1 {
+  color: white;
+  font-size: 80px;
+  margin-top: -150px;
+}
+
+.hero-section > p {
+  margin-top: 8px;
+  color: white;
+  font-size: 32px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+  'Lucida Sans', Arial, sans-serif;
+}
+
+.hero-section button{
+  font-size:40px;
+  background-color: black;
+  color: #fff;
+  padding: 20px 40px;
+  border: 2px solid white;
+  border-radius:10px;
+  transition: all 0.3s ease-out;
+  width:fit-content;
+  text-decoration:none;
+  transform:translate(0,30px);
+  cursor:pointer;
+}
+
+.hero-section button:hover{
+  transition: all 0.3s ease-out;
+  background: #fff;
+  color: #242424;
+  transition: 250ms;
+}
+
+.open-login{
+  margin-right:25px;
+}
+
+.open-signup{
+  margin-left:25px;
+}
