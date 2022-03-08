@@ -42,6 +42,7 @@
   width:fit-content;
   font-size:20px;
   cursor:pointer;
+  margin-top:20px;
 }
 
 .signup button:hover{
@@ -64,4 +65,8 @@
 .birthdate{
     display: flex;
     justify-content: space-between;
+}
+
+.error{
+    color:red;
 }

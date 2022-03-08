@@ -29,7 +29,7 @@ function Navbar() {
       <nav className='navbar'>
         <div className='navbar-container'>
           <div className='navbar-logo'>
-            <img src={logo}/>Astrotribes
+            <img src={logo}/>AstroTribes
           </div>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />

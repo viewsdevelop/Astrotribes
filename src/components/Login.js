@@ -1,5 +1,4 @@
 import React, {useRef, useState} from 'react';
-import {Alert} from 'react-bootstrap';
 import './firebase';
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import logo from '../images/logo.png'
@@ -26,12 +25,11 @@ export default function Login() {
       setError('Invalid email or password.')
     }
     setLoading(false)
-    .then(window.location='/dashboard')
   }
 
   return(
     <form className='login' onSubmit={handleSubmit}>
-      {error && <Alert variant='danger'>{error}</Alert>}
+      <div className='error'>{error}</div>
       <img src={logo}/>
       <p>Email</p>
       <input type='email' ref={emailRef} required/>
