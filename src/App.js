@@ -2,8 +2,8 @@ import React from 'react';
 import './App.css'
 import Home from './components/pages/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Services from './components/pages/Services';
-import Products from './components/pages/Products';
+import About from './components/pages/About';
+import Merch from './components/pages/Merch';
 import User from './components/pages/User';
 
 function App() {
@@ -12,8 +12,8 @@ function App() {
       <Router>
         <Switch>
           <Route path='/' exact component={Home} />
-          <Route path='/services' component={Services} />
-          <Route path='/products' component={Products} />
+          <Route path='/merch' component={Merch} />
+          <Route path='/about' component={About} />
           <Route path='/user' component={User} />
         </Switch>
       </Router>

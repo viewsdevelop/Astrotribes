@@ -1,5 +1,5 @@
 .navbar {
-  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+  background: black;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -59,7 +59,7 @@
 
 .nav-links:hover {
   border-bottom: 4px solid #fff;
-  transition: all 0.2s ease-out;
+  transition: all 0.1s ease-out;
 }
 
 .fa-bars {
@@ -73,28 +73,4 @@
 .navbar img{
   height:50px;
   margin-right:10px;
-}
-
-.login-container{
-  text-decoration:none;
-  display: flex;
-  align-items: center;
-  transform:translate(40px,0);
-  height: 100%;
-}
-
-.login{
-  background-color: black;
-  color: #fff;
-  padding: 10px 20px;
-  border: 1px solid white;
-  border-radius:3px;
-  width:fit-content;
-}
-
-.login:hover{
-  transition: all 0.3s ease-out;
-  background: #fff;
-  color: #242424;
-  transition: 250ms;
 }

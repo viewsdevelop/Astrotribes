@@ -29,7 +29,7 @@ export default function Signup() {
     setForm2(true)
   }
 
-  async function form2Submit(e){
+  function form2Submit(e){
     e.preventDefault()
 
     if (passwordRef.current.value !== confirmRef.current.value){
@@ -45,8 +45,8 @@ export default function Signup() {
         name:`${firstNameRef.current.value} ${lastNameRef.current.value}`,
         email: emailRef.current.value,
         birthdate: dateRef.current.value
-      })) //push user data to database
-      window.location='./user' //Redirect to new user's page
+      })) //push new user data to database
+      window.location='./user' //redirect to new user's page
       history.push("/")
     } catch {
       setError("Failed to create an account.")
@@ -66,7 +66,7 @@ export default function Signup() {
         <input className="citySearch" ref={cityRef}/>
         <p>Birthdate</p>
         <div className="birthdate">
-          <input type="date" ref={dateRef}></input>
+          <input type="date" min="1900-01-01" max="2008-12-31" ref={dateRef}></input>
           <input type="time" ref={timeRef}></input>
         </div>
         <button disabled={loading} type="submit">Continue</button>

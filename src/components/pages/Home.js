@@ -1,10 +1,9 @@
-import React, {useEffect, useState} from "react";
-import {db} from "../firebase";
-import {collection, doc, getDocs} from "firebase/firestore";
+import React, {useState} from "react";
 import Navbar from "../Navbar.js";
 import Login from "../Login.js";
 import Signup from "../Signup.js";
 import "./Home.css";
+import Background from "../../images/background.jpeg"
 
 export default function Home() {
   const [heroSection, setHeroSection]=useState(true)
@@ -31,13 +30,13 @@ export default function Home() {
 
   return (
     <>
+      <img className="background" src={Background} onClick={close}/>
       {navbar && <Navbar/>}
       {login && <Login/>}
       {signup && <Signup/>}
-        <video src="/videos/video-1.mp4" autoPlay loop muted onClick={close}/>
         {heroSection && <div className="hero-section">
           <h1>AstroTribes®</h1>
-          <p>Buid your astrological community today.</p>
+          <p>Discover your astrological signs and build your community.</p>
           <div>
             <button className="open-login" onClick={openLogin}>
               LOG IN
