@@ -3,7 +3,7 @@ import {useHistory} from "react-router-dom";
 import {db} from "./firebase";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 import { doc, setDoc } from "firebase/firestore"; 
-import logo from "../images/logo.png";
+import icon from "../images/icon.png";
 import "./Signup.css";
 
 export default function Signup() {
@@ -57,7 +57,7 @@ export default function Signup() {
   return(
     <div className="signup">
       {form1 && <form className="form-1" onSubmit={form1Submit}>
-        <img src={logo}/>
+        <img src={icon}/>
         <p>First Name</p>
         <input ref={firstNameRef} required/>
         <p>Last Name</p>
@@ -72,7 +72,7 @@ export default function Signup() {
         <button disabled={loading} type="submit">Continue</button>
       </form>}
       {form2 && <form className="form-2"  onSubmit={form2Submit}>
-        <img src={logo}/>
+        <img src={icon}/>
         <div className='error'>{error}</div>
         <p>Email</p>
         <input type="email" ref={emailRef} required/>

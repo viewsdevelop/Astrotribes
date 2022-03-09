@@ -15,14 +15,18 @@
   justify-content: center;
   align-items: center;
   object-fit: contain;
-  transform:translate(0,300px);
+  transform:translate(0,200px);
   text-align: center;
 }
 
-.hero-section > h1 {
+.hero-section h1 {
   color: white;
   font-size: 80px;
   margin-top: -150px;
+}
+
+.hero-section img{
+  height:80px;
 }
 
 .hero-section > p {

@@ -4,6 +4,7 @@ import Login from "../Login.js";
 import Signup from "../Signup.js";
 import "./Home.css";
 import Background from "../../images/background.jpeg"
+import logo from '../../images/logo.svg'
 
 export default function Home() {
   const [heroSection, setHeroSection]=useState(true)
@@ -35,7 +36,7 @@ export default function Home() {
       {login && <Login/>}
       {signup && <Signup/>}
         {heroSection && <div className="hero-section">
-          <h1>AstroTribes®</h1>
+          <svg src={logo}/>
           <p>Discover your astrological signs and build your community.</p>
           <div>
             <button className="open-login" onClick={openLogin}>

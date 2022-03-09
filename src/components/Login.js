@@ -1,7 +1,7 @@
 import React, {useRef, useState} from 'react';
 import './firebase';
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
-import logo from '../images/logo.png'
+import icon from '../images/icon.png'
 import './Login.css'
 import {useHistory} from 'react-router-dom'
 
@@ -30,7 +30,7 @@ export default function Login() {
   return(
     <form className='login' onSubmit={handleSubmit}>
       <div className='error'>{error}</div>
-      <img src={logo}/>
+      <img src={icon}/>
       <p>Email</p>
       <input type='email' ref={emailRef} required/>
       <p>Password</p>

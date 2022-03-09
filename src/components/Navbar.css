@@ -70,7 +70,10 @@
   display: none;
 }
 
-.navbar img{
-  height:50px;
-  margin-right:10px;
+.navbar-logo img{
+  height:40px;
+}
+
+.navbar-logo p{
+  height:40px;
 }
