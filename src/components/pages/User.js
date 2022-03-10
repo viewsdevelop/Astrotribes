@@ -1,8 +1,17 @@
 import React from 'react'
+import background from "../../images/background.jpeg"
+import Header from '../Header.js'
 
 function User() {
   return (
-    <div>User</div>
+    <>
+      {/*Header*/}
+
+      {/*App Body*/}
+        {/*Sidebar*/}
+        {/*Feed*/}
+        {/*Widgets*/}
+    </>
   )
 }
 

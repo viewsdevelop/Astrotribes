@@ -3,7 +3,7 @@ import Navbar from "../Navbar.js";
 import Login from "../Login.js";
 import Signup from "../Signup.js";
 import "./Home.css";
-import Background from "../../images/background.jpeg"
+import background from "../../images/background.jpeg"
 import logo from '../../images/logo.svg'
 
 export default function Home() {
@@ -30,13 +30,13 @@ export default function Home() {
   }
 
   return (
-    <>
-      <img className="background" src={Background} onClick={close}/>
+    <div>
+      <img className="background" src={background} onClick={close}/>
       {navbar && <Navbar/>}
       {login && <Login/>}
       {signup && <Signup/>}
         {heroSection && <div className="hero-section">
-          <svg src={logo}/>
+          <img src={logo}/>
           <p>Discover your astrological signs and build your community.</p>
           <div>
             <button className="open-login" onClick={openLogin}>
@@ -47,6 +47,6 @@ export default function Home() {
             </button>
           </div>
         </div>}
-    </>
+    </div>
   );
 }
